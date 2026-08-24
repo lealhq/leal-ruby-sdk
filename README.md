@@ -2,10 +2,19 @@
 
 [![fern shield](https://img.shields.io/badge/%F0%9F%8C%BF-Built%20with%20Fern-brightgreen)](https://buildwithfern.com?utm_source=github&utm_medium=github&utm_campaign=readme&utm_source=https%3A%2F%2Fgithub.com%2Flealhq%2Fleal-ruby-sdk)
 
-The Leal Ruby library provides convenient access to the Leal APIs from Ruby.
+Digital loyalty stamp cards in Apple Wallet and Google Wallet, for local
+businesses. This library covers the whole [Leal](https://www.getleal.com)
+API, so you can enrol customers, add stamps, redeem rewards and read a
+card's wallet links from your own application.
+
+- Guides and a page for every language: [www.getleal.com/developers](https://www.getleal.com/developers)
+- Create an API token: [app.getleal.com/api_tokens](https://app.getleal.com/api_tokens)
+- The OpenAPI description these libraries are built from: [www.getleal.com/openapi.json](https://www.getleal.com/openapi.json)
+
 
 ## Table of Contents
 
+- [Documentation](#documentation)
 - [Reference](#reference)
 - [Usage](#usage)
 - [Environments](#environments)
@@ -16,6 +25,10 @@ The Leal Ruby library provides convenient access to the Leal APIs from Ruby.
   - [Additional Headers](#additional-headers)
   - [Additional Query Parameters](#additional-query-parameters)
 - [Contributing](#contributing)
+
+## Documentation
+
+API reference documentation is available [here](https://app.getleal.com/docs/api.html).
 
 ## Reference
 
@@ -30,11 +43,11 @@ require "leal"
 
 client = Leal::Client.new(token: "<token>")
 
-client.cards.create(
+client.customer_cards.stamp(
   account_id: 1,
-  card: {
-    name: "name"
-  }
+  customer_id: 1,
+  id: 1,
+  stamps: 1
 )
 ```
 
@@ -71,7 +84,7 @@ client = Leal::Client.new(
 )
 
 begin
-    result = client.cards.create
+    result = client.customer_cards.stamp
 rescue Leal::Errors::TimeoutError
     puts "API didn't respond before our timeout elapsed"
 rescue Leal::Errors::ServiceUnavailableError
@@ -121,7 +134,7 @@ The SDK defaults to a 60 second timeout. Use the `timeout` option to configure t
 ```ruby
 require "Leal"
 
-response = client.cards.create(
+response = client.customer_cards.stamp(
     ...,
     timeout: 30  # 30 second timeout
 )
@@ -134,7 +147,7 @@ If you would like to send additional headers as part of the request, use the `ad
 ```ruby
 require "Leal"
 
-response = client.cards.create(
+response = client.customer_cards.stamp(
     ...,
     request_options: {
         additional_headers: {
@@ -151,7 +164,7 @@ If you would like to send additional query parameters as part of the request, us
 ```ruby
 require "Leal"
 
-response = client.cards.create(
+response = client.customer_cards.stamp(
     ...,
     request_options: {
         additional_query_parameters: {
