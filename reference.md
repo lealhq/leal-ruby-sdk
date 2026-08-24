@@ -1,6 +1,6 @@
 # Reference
 ## Stores
-<details><summary><code>client.stores.<a href="/lib/Leal/stores/client.rb">list</a>() -> Internal::Types::Array[Leal::Stores::Types::ListStoresResponseItem]</code></summary>
+<details><summary><code>client.stores.<a href="/lib/leal/stores/client.rb">list</a>() -> Internal::Types::Array[Leal::Stores::Types::ListStoresResponseItem]</code></summary>
 <dl>
 <dd>
 
@@ -54,7 +54,7 @@ client.stores.list
 </dl>
 </details>
 
-<details><summary><code>client.stores.<a href="/lib/Leal/stores/client.rb">get</a>(id:) -> Leal::Stores::Types::GetStoresResponse</code></summary>
+<details><summary><code>client.stores.<a href="/lib/leal/stores/client.rb">get</a>(id:) -> Leal::Stores::Types::GetStoresResponse</code></summary>
 <dl>
 <dd>
 
@@ -116,7 +116,7 @@ client.stores.get(id: 1)
 </dl>
 </details>
 
-<details><summary><code>client.stores.<a href="/lib/Leal/stores/client.rb">update</a>(id:, request) -> Leal::Stores::Types::UpdateStoresResponse</code></summary>
+<details><summary><code>client.stores.<a href="/lib/leal/stores/client.rb">update</a>(id:, request) -> Leal::Stores::Types::UpdateStoresResponse</code></summary>
 <dl>
 <dd>
 
@@ -190,7 +190,7 @@ client.stores.update(
 </details>
 
 ## Cards
-<details><summary><code>client.cards.<a href="/lib/Leal/cards/client.rb">list</a>(account_id:) -> Internal::Types::Array[Leal::Cards::Types::ListCardsResponseItem]</code></summary>
+<details><summary><code>client.cards.<a href="/lib/leal/cards/client.rb">list</a>(account_id:) -> Internal::Types::Array[Leal::Cards::Types::ListCardsResponseItem]</code></summary>
 <dl>
 <dd>
 
@@ -262,7 +262,7 @@ client.cards.list(account_id: 1)
 </dl>
 </details>
 
-<details><summary><code>client.cards.<a href="/lib/Leal/cards/client.rb">create</a>(account_id:, request) -> Leal::Cards::Types::CreateCardsResponse</code></summary>
+<details><summary><code>client.cards.<a href="/lib/leal/cards/client.rb">create</a>(account_id:, request) -> Leal::Cards::Types::CreateCardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -339,7 +339,7 @@ client.cards.create(
 </dl>
 </details>
 
-<details><summary><code>client.cards.<a href="/lib/Leal/cards/client.rb">get</a>(account_id:, id:) -> Leal::Cards::Types::GetCardsResponse</code></summary>
+<details><summary><code>client.cards.<a href="/lib/leal/cards/client.rb">get</a>(account_id:, id:) -> Leal::Cards::Types::GetCardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -412,7 +412,7 @@ client.cards.get(
 </dl>
 </details>
 
-<details><summary><code>client.cards.<a href="/lib/Leal/cards/client.rb">update</a>(account_id:, id:, request) -> Leal::Cards::Types::UpdateCardsResponse</code></summary>
+<details><summary><code>client.cards.<a href="/lib/leal/cards/client.rb">update</a>(account_id:, id:, request) -> Leal::Cards::Types::UpdateCardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -495,7 +495,7 @@ client.cards.update(
 </details>
 
 ## Customers
-<details><summary><code>client.customers.<a href="/lib/Leal/customers/client.rb">list</a>(account_id:) -> Leal::Customers::Types::ListCustomersResponse</code></summary>
+<details><summary><code>client.customers.<a href="/lib/leal/customers/client.rb">list</a>(account_id:) -> Leal::Customers::Types::ListCustomersResponse</code></summary>
 <dl>
 <dd>
 
@@ -600,7 +600,7 @@ client.customers.list(account_id: 1)
 </dl>
 </details>
 
-<details><summary><code>client.customers.<a href="/lib/Leal/customers/client.rb">create</a>(account_id:, request) -> Leal::Customers::Types::CreateCustomersResponse</code></summary>
+<details><summary><code>client.customers.<a href="/lib/leal/customers/client.rb">create</a>(account_id:, request) -> Leal::Customers::Types::CreateCustomersResponse</code></summary>
 <dl>
 <dd>
 
@@ -698,7 +698,7 @@ client.customers.create(
 </dl>
 </details>
 
-<details><summary><code>client.customers.<a href="/lib/Leal/customers/client.rb">get</a>(account_id:, id:) -> Leal::Customers::Types::GetCustomersResponse</code></summary>
+<details><summary><code>client.customers.<a href="/lib/leal/customers/client.rb">get</a>(account_id:, id:) -> Leal::Customers::Types::GetCustomersResponse</code></summary>
 <dl>
 <dd>
 
@@ -774,7 +774,7 @@ client.customers.get(
 </dl>
 </details>
 
-<details><summary><code>client.customers.<a href="/lib/Leal/customers/client.rb">update</a>(account_id:, id:, request) -> Leal::Customers::Types::UpdateCustomersResponse</code></summary>
+<details><summary><code>client.customers.<a href="/lib/leal/customers/client.rb">update</a>(account_id:, id:, request) -> Leal::Customers::Types::UpdateCustomersResponse</code></summary>
 <dl>
 <dd>
 
@@ -862,7 +862,7 @@ client.customers.update(
 </details>
 
 ## Customer Cards
-<details><summary><code>client.customer_cards.<a href="/lib/Leal/customer_cards/client.rb">list</a>(account_id:, customer_id:) -> Internal::Types::Array[Leal::CustomerCards::Types::ListCustomerCardsResponseItem]</code></summary>
+<details><summary><code>client.customer_cards.<a href="/lib/leal/customer_cards/client.rb">list</a>(account_id:, customer_id:) -> Internal::Types::Array[Leal::CustomerCards::Types::ListCustomerCardsResponseItem]</code></summary>
 <dl>
 <dd>
 
@@ -938,7 +938,7 @@ client.customer_cards.list(
 </dl>
 </details>
 
-<details><summary><code>client.customer_cards.<a href="/lib/Leal/customer_cards/client.rb">get</a>(account_id:, customer_id:, id:) -> Leal::CustomerCards::Types::GetCustomerCardsResponse</code></summary>
+<details><summary><code>client.customer_cards.<a href="/lib/leal/customer_cards/client.rb">get</a>(account_id:, customer_id:, id:) -> Leal::CustomerCards::Types::GetCustomerCardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -1023,7 +1023,7 @@ client.customer_cards.get(
 </dl>
 </details>
 
-<details><summary><code>client.customer_cards.<a href="/lib/Leal/customer_cards/client.rb">redeem</a>(account_id:, customer_id:, id:, request) -> Leal::CustomerCards::Types::RedeemCustomerCardsResponse</code></summary>
+<details><summary><code>client.customer_cards.<a href="/lib/leal/customer_cards/client.rb">redeem</a>(account_id:, customer_id:, id:, request) -> Leal::CustomerCards::Types::RedeemCustomerCardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -1116,7 +1116,7 @@ client.customer_cards.redeem(
 </dl>
 </details>
 
-<details><summary><code>client.customer_cards.<a href="/lib/Leal/customer_cards/client.rb">stamp</a>(account_id:, customer_id:, id:, request) -> Leal::CustomerCards::Types::StampCustomerCardsResponse</code></summary>
+<details><summary><code>client.customer_cards.<a href="/lib/leal/customer_cards/client.rb">stamp</a>(account_id:, customer_id:, id:, request) -> Leal::CustomerCards::Types::StampCustomerCardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -1217,7 +1217,7 @@ client.customer_cards.stamp(
 </details>
 
 ## Locations
-<details><summary><code>client.locations.<a href="/lib/Leal/locations/client.rb">list</a>(account_id:) -> Internal::Types::Array[Leal::Locations::Types::ListLocationsResponseItem]</code></summary>
+<details><summary><code>client.locations.<a href="/lib/leal/locations/client.rb">list</a>(account_id:) -> Internal::Types::Array[Leal::Locations::Types::ListLocationsResponseItem]</code></summary>
 <dl>
 <dd>
 
@@ -1279,7 +1279,7 @@ client.locations.list(account_id: 1)
 </dl>
 </details>
 
-<details><summary><code>client.locations.<a href="/lib/Leal/locations/client.rb">create</a>(account_id:, request) -> Leal::Locations::Types::CreateLocationsResponse</code></summary>
+<details><summary><code>client.locations.<a href="/lib/leal/locations/client.rb">create</a>(account_id:, request) -> Leal::Locations::Types::CreateLocationsResponse</code></summary>
 <dl>
 <dd>
 
@@ -1356,7 +1356,7 @@ client.locations.create(
 </dl>
 </details>
 
-<details><summary><code>client.locations.<a href="/lib/Leal/locations/client.rb">get</a>(account_id:, id:) -> Leal::Locations::Types::GetLocationsResponse</code></summary>
+<details><summary><code>client.locations.<a href="/lib/leal/locations/client.rb">get</a>(account_id:, id:) -> Leal::Locations::Types::GetLocationsResponse</code></summary>
 <dl>
 <dd>
 
@@ -1429,7 +1429,7 @@ client.locations.get(
 </dl>
 </details>
 
-<details><summary><code>client.locations.<a href="/lib/Leal/locations/client.rb">delete</a>(account_id:, id:) -> </code></summary>
+<details><summary><code>client.locations.<a href="/lib/leal/locations/client.rb">delete</a>(account_id:, id:) -> </code></summary>
 <dl>
 <dd>
 
@@ -1502,7 +1502,7 @@ client.locations.delete(
 </dl>
 </details>
 
-<details><summary><code>client.locations.<a href="/lib/Leal/locations/client.rb">update</a>(account_id:, id:, request) -> Leal::Locations::Types::UpdateLocationsResponse</code></summary>
+<details><summary><code>client.locations.<a href="/lib/leal/locations/client.rb">update</a>(account_id:, id:, request) -> Leal::Locations::Types::UpdateLocationsResponse</code></summary>
 <dl>
 <dd>
 
@@ -1585,7 +1585,7 @@ client.locations.update(
 </details>
 
 ## Posters
-<details><summary><code>client.posters.<a href="/lib/Leal/posters/client.rb">list</a>(account_id:) -> Internal::Types::Array[Leal::Posters::Types::ListPostersResponseItem]</code></summary>
+<details><summary><code>client.posters.<a href="/lib/leal/posters/client.rb">list</a>(account_id:) -> Internal::Types::Array[Leal::Posters::Types::ListPostersResponseItem]</code></summary>
 <dl>
 <dd>
 
@@ -1663,7 +1663,7 @@ client.posters.list(account_id: 1)
 </dl>
 </details>
 
-<details><summary><code>client.posters.<a href="/lib/Leal/posters/client.rb">create</a>(account_id:, request) -> Leal::Posters::Types::CreatePostersResponse</code></summary>
+<details><summary><code>client.posters.<a href="/lib/leal/posters/client.rb">create</a>(account_id:, request) -> Leal::Posters::Types::CreatePostersResponse</code></summary>
 <dl>
 <dd>
 
@@ -1740,7 +1740,7 @@ client.posters.create(
 </dl>
 </details>
 
-<details><summary><code>client.posters.<a href="/lib/Leal/posters/client.rb">get</a>(account_id:, id:) -> Leal::Posters::Types::GetPostersResponse</code></summary>
+<details><summary><code>client.posters.<a href="/lib/leal/posters/client.rb">get</a>(account_id:, id:) -> Leal::Posters::Types::GetPostersResponse</code></summary>
 <dl>
 <dd>
 
@@ -1813,7 +1813,7 @@ client.posters.get(
 </dl>
 </details>
 
-<details><summary><code>client.posters.<a href="/lib/Leal/posters/client.rb">delete</a>(account_id:, id:) -> </code></summary>
+<details><summary><code>client.posters.<a href="/lib/leal/posters/client.rb">delete</a>(account_id:, id:) -> </code></summary>
 <dl>
 <dd>
 
@@ -1886,7 +1886,7 @@ client.posters.delete(
 </dl>
 </details>
 
-<details><summary><code>client.posters.<a href="/lib/Leal/posters/client.rb">update</a>(account_id:, id:, request) -> Leal::Posters::Types::UpdatePostersResponse</code></summary>
+<details><summary><code>client.posters.<a href="/lib/leal/posters/client.rb">update</a>(account_id:, id:, request) -> Leal::Posters::Types::UpdatePostersResponse</code></summary>
 <dl>
 <dd>
 
@@ -1969,7 +1969,7 @@ client.posters.update(
 </details>
 
 ## Rewards
-<details><summary><code>client.rewards.<a href="/lib/Leal/rewards/client.rb">list</a>(account_id:) -> Internal::Types::Array[Leal::Rewards::Types::ListRewardsResponseItem]</code></summary>
+<details><summary><code>client.rewards.<a href="/lib/leal/rewards/client.rb">list</a>(account_id:) -> Internal::Types::Array[Leal::Rewards::Types::ListRewardsResponseItem]</code></summary>
 <dl>
 <dd>
 
@@ -2047,7 +2047,7 @@ client.rewards.list(account_id: 1)
 </dl>
 </details>
 
-<details><summary><code>client.rewards.<a href="/lib/Leal/rewards/client.rb">create</a>(account_id:, request) -> Leal::Rewards::Types::CreateRewardsResponse</code></summary>
+<details><summary><code>client.rewards.<a href="/lib/leal/rewards/client.rb">create</a>(account_id:, request) -> Leal::Rewards::Types::CreateRewardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -2125,7 +2125,7 @@ client.rewards.create(
 </dl>
 </details>
 
-<details><summary><code>client.rewards.<a href="/lib/Leal/rewards/client.rb">get</a>(account_id:, id:) -> Leal::Rewards::Types::GetRewardsResponse</code></summary>
+<details><summary><code>client.rewards.<a href="/lib/leal/rewards/client.rb">get</a>(account_id:, id:) -> Leal::Rewards::Types::GetRewardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -2198,7 +2198,7 @@ client.rewards.get(
 </dl>
 </details>
 
-<details><summary><code>client.rewards.<a href="/lib/Leal/rewards/client.rb">delete</a>(account_id:, id:) -> </code></summary>
+<details><summary><code>client.rewards.<a href="/lib/leal/rewards/client.rb">delete</a>(account_id:, id:) -> </code></summary>
 <dl>
 <dd>
 
@@ -2271,7 +2271,7 @@ client.rewards.delete(
 </dl>
 </details>
 
-<details><summary><code>client.rewards.<a href="/lib/Leal/rewards/client.rb">update</a>(account_id:, id:, request) -> Leal::Rewards::Types::UpdateRewardsResponse</code></summary>
+<details><summary><code>client.rewards.<a href="/lib/leal/rewards/client.rb">update</a>(account_id:, id:, request) -> Leal::Rewards::Types::UpdateRewardsResponse</code></summary>
 <dl>
 <dd>
 
@@ -2354,7 +2354,7 @@ client.rewards.update(
 </details>
 
 ## Status
-<details><summary><code>client.status.<a href="/lib/Leal/status/client.rb">check</a>() -> Leal::Status::Types::CheckStatusResponse</code></summary>
+<details><summary><code>client.status.<a href="/lib/leal/status/client.rb">check</a>() -> Leal::Status::Types::CheckStatusResponse</code></summary>
 <dl>
 <dd>
 

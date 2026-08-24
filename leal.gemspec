@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/Leal/version"
+require_relative "lib/leal/version"
 require_relative "custom.gemspec"
 
 # NOTE: A handful of these fields are required as part of the Ruby specification.

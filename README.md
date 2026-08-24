@@ -56,16 +56,16 @@ client.customer_cards.stamp(
 This SDK allows you to configure different environments or custom URLs for API requests. You can either use the predefined environments or specify your own custom URL.
 ### Environments
 ```ruby
-require "Leal"
+require "leal"
 
-Leal = Leal::Client.new(
+leal = Leal::Client.new(
     base_url: Leal::Environment::PRODUCTION
 )
 ```
 
 ### Custom URL
 ```ruby
-require "Leal"
+require "leal"
 
 client = Leal::Client.new(
     base_url: "https://example.com"
@@ -77,7 +77,7 @@ client = Leal::Client.new(
 Failed API calls will raise errors that can be rescued from granularly.
 
 ```ruby
-require "Leal"
+require "leal"
 
 client = Leal::Client.new(
     base_url: "https://example.com"
@@ -119,7 +119,7 @@ The `retryStatusCodes` configuration controls which [5XX](https://developer.mozi
 Use the `max_retries` option to configure this behavior.
 
 ```ruby
-require "Leal"
+require "leal"
 
 client = Leal::Client.new(
     base_url: "https://example.com",
@@ -132,7 +132,7 @@ client = Leal::Client.new(
 The SDK defaults to a 60 second timeout. Use the `timeout` option to configure this behavior.
 
 ```ruby
-require "Leal"
+require "leal"
 
 response = client.customer_cards.stamp(
     ...,
@@ -145,7 +145,7 @@ response = client.customer_cards.stamp(
 If you would like to send additional headers as part of the request, use the `additional_headers` request option.
 
 ```ruby
-require "Leal"
+require "leal"
 
 response = client.customer_cards.stamp(
     ...,
@@ -162,7 +162,7 @@ response = client.customer_cards.stamp(
 If you would like to send additional query parameters as part of the request, use the `additional_query_parameters` request option.
 
 ```ruby
-require "Leal"
+require "leal"
 
 response = client.customer_cards.stamp(
     ...,
