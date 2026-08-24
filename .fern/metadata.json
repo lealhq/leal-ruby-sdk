@@ -5,9 +5,9 @@
   "generatorConfig": {
     "moduleName": "Leal"
   },
-  "originGitCommit": "d92960a3c4691b54ed1ed708a3f348f3f0e18d55",
+  "originGitCommit": "cded6e2ebf0bf136ad92a61cc2713b7355927189",
   "originGitCommitIsDirty": false,
   "invokedBy": "ci",
   "ciProvider": "github",
-  "sdkVersion": "0.0.6"
+  "sdkVersion": "0.0.7"
 }
