@@ -17,6 +17,8 @@ module Leal
         field :rate_limit, -> { Leal::Status::Types::CheckStatusResponseRateLimit }, optional: false, nullable: false
 
         field :status, -> { String }, optional: false, nullable: false
+
+        field :versioning, -> { Leal::Status::Types::CheckStatusResponseVersioning }, optional: false, nullable: false
       end
     end
   end
