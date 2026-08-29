@@ -8,9 +8,19 @@ module Leal
 
         field :card_id, -> { Integer }, optional: false, nullable: false
 
+        field :contact_collection_mode, -> { String }, optional: true, nullable: false
+
+        field :minimum_age, -> { Integer }, optional: true, nullable: false
+
         field :paper_size, -> { String }, optional: true, nullable: false
 
         field :primary_color, -> { String }, optional: true, nullable: false
+
+        field :require_birthday, -> { Internal::Types::Boolean }, optional: true, nullable: false
+
+        field :require_email, -> { Internal::Types::Boolean }, optional: true, nullable: false
+
+        field :require_phone, -> { Internal::Types::Boolean }, optional: true, nullable: false
 
         field :secondary_color, -> { String }, optional: true, nullable: false
 
