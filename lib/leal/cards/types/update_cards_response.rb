@@ -40,6 +40,8 @@ module Leal
 
         field :strip_color, -> { String }, optional: false, nullable: false
 
+        field :strip_opacity, -> { Integer }, optional: false, nullable: false
+
         field :strip_preset, -> { String }, optional: false, nullable: false
 
         field :strip_type, -> { String }, optional: false, nullable: false

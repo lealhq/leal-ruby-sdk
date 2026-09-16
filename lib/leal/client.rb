@@ -11,7 +11,7 @@ module Leal
       @raw_client = Leal::Internal::Http::RawClient.new(
         base_url: base_url || Leal::Environment::PRODUCTION,
         headers: {
-          "User-Agent" => "leal/0.0.12",
+          "User-Agent" => "leal/0.0.13",
           "X-Fern-Language" => "Ruby",
           Authorization: "Bearer #{token}"
         },
