@@ -55,7 +55,7 @@ module Leal
       # verify deliveries. The URL must be publicly reachable over https.
       #
       # Events: `customer.created`, `customer.updated`, `customer_card.created`, `stamp.earned`, `stamp.removed`,
-      # `reward.unlocked`, `reward.redeemed`, or `*` for all of them.
+      # `reward.unlocked`, `reward.redeemed`, `referral.created`, `referral.rewarded`, or `*` for all of them.
       #
       # @param request_options [Hash]
       # @param params [Leal::WebhookSubscriptions::Types::PostAPIV1AccountsAccountIDWebhookSubscriptionsRequest]

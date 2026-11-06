@@ -16,6 +16,14 @@ module Leal
 
         field :name, -> { String }, optional: true, nullable: false
 
+        field :qr_style, -> { Leal::Cards::Types::UpdateCardsRequestCardQrStyle }, optional: true, nullable: false
+
+        field :referee_stamps, -> { Integer }, optional: true, nullable: false
+
+        field :referrals_enabled, -> { Internal::Types::Boolean }, optional: true, nullable: false
+
+        field :referrer_stamps, -> { Integer }, optional: true, nullable: false
+
         field :show_member_field, -> { Internal::Types::Boolean }, optional: true, nullable: false
 
         field :show_stamps_to_reward_field, -> { Internal::Types::Boolean }, optional: true, nullable: false

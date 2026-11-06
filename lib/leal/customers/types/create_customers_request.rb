@@ -10,6 +10,8 @@ module Leal
 
         field :customer, -> { Leal::Customers::Types::CreateCustomersRequestCustomer }, optional: false, nullable: false
 
+        field :referral_code, -> { String }, optional: true, nullable: false
+
         field :send_card_links, -> { Internal::Types::Boolean }, optional: true, nullable: false
       end
     end

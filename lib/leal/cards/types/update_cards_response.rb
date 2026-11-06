@@ -24,6 +24,14 @@ module Leal
 
         field :name, -> { String }, optional: false, nullable: false
 
+        field :qr_style, -> { String }, optional: false, nullable: false
+
+        field :referee_stamps, -> { Integer }, optional: false, nullable: false
+
+        field :referrals_enabled, -> { Internal::Types::Boolean }, optional: false, nullable: false
+
+        field :referrer_stamps, -> { Integer }, optional: false, nullable: false
+
         field :rewards_count, -> { Integer }, optional: false, nullable: false
 
         field :show_member_field, -> { Internal::Types::Boolean }, optional: false, nullable: false

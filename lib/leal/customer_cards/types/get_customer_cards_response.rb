@@ -28,6 +28,12 @@ module Leal
 
         field :progress_percentage, -> { Integer }, optional: false, nullable: false
 
+        field :referral_url, -> { String }, optional: false, nullable: false
+
+        field :referrals_count, -> { Integer }, optional: false, nullable: false
+
+        field :referred_by, -> { Leal::CustomerCards::Types::GetCustomerCardsResponseReferredBy }, optional: false, nullable: false
+
         field :stamps_count, -> { Integer }, optional: false, nullable: false
 
         field :stamps_remaining, -> { Integer }, optional: false, nullable: false
