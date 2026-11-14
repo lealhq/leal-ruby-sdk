@@ -4,6 +4,8 @@ module Leal
   module Cards
     module Types
       class UpdateCardsResponse < Internal::Types::Model
+        field :apple_pass_style, -> { String }, optional: false, nullable: false
+
         field :archived_at, -> { String }, optional: false, nullable: false
 
         field :auxiliary_fields, -> { Internal::Types::Array[String] }, optional: false, nullable: false
@@ -15,6 +17,12 @@ module Leal
         field :customer_cards_count, -> { Integer }, optional: false, nullable: false
 
         field :expires_at, -> { String }, optional: false, nullable: false
+
+        field :featured_actions, -> { Internal::Types::Array[String] }, optional: false, nullable: false
+
+        field :google_logo_style, -> { String }, optional: false, nullable: false
+
+        field :google_wallet, -> { Leal::Cards::Types::UpdateCardsResponseGoogleWallet }, optional: false, nullable: false
 
         field :header_text, -> { String }, optional: false, nullable: false
 

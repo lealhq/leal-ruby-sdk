@@ -4,11 +4,17 @@ module Leal
   module Cards
     module Types
       class UpdateCardsRequestCard < Internal::Types::Model
+        field :apple_pass_style, -> { Leal::Cards::Types::UpdateCardsRequestCardApplePassStyle }, optional: true, nullable: false
+
         field :auxiliary_fields, -> { Internal::Types::Array[String] }, optional: true, nullable: false
 
         field :card_color, -> { String }, optional: true, nullable: false
 
         field :expires_at, -> { String }, optional: true, nullable: false
+
+        field :featured_actions, -> { Internal::Types::Array[String] }, optional: true, nullable: false
+
+        field :google_logo_style, -> { Leal::Cards::Types::UpdateCardsRequestCardGoogleLogoStyle }, optional: true, nullable: false
 
         field :header_text, -> { String }, optional: true, nullable: false
 
